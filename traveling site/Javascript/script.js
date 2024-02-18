@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
 
 //add event on multiple element 
 const addelementonElements = function (elements, eventType, callback) {
-   for (let i = 0; i < elements.length; i++) {
+   for(let i = 0,len=elements.length; i < len; i++) {
       elements[i].addEventListener(eventType, callback);
    }
 }
@@ -17,15 +17,13 @@ const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNav = function () {
+const Nav =function () {
    navbar.classList.toggle("active");
    overlay.classList.toggle("active");
    document.body.classList.toggle("nav-active");
 }
 
-
-addelementonElements(navTogglers, "click", toggleNav);
-
+addelementonElements(navTogglers, "click", Nav);
 
 // Headers
 
