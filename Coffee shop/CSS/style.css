@@ -27,14 +27,17 @@ body {
     color: var(--text-color);
     background: var(--bg-color);
 }
+
 /* custom scroll Bar */
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
-html::-webkit-scrollbar{
+
+html::-webkit-scrollbar {
     width: 0.5rem;
     background: transparent;
 }
+
 a {
     text-decoration: none;
 }
@@ -697,10 +700,13 @@ header {
     .home-text h1 {
         font-size: 2rem;
     }
-    p{
+
+    p {
         font-size: 0.9rem;
     }
-    .heading h2,.book-data h2{
+
+    .heading h2,
+    .book-data h2 {
         font-size: 1.4rem;
     }
 }
