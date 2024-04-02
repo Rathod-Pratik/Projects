@@ -22,11 +22,11 @@ const getwether = (city) => {
         })
         .catch(err => console.error(err));
 }
-let submit = document.getElementById('submit');
-submit.addEventListener("click", () => {
-    // e.preventDefault();
-    getwether(city.value);
-})
+ let submit = document.getElementById('submit');
+ submit.addEventListener("click", (e) =>{
+     e.preventDefault();
+     getwether(city.value);
+ })
 getwether("delhi")
 
 
