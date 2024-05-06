@@ -4,6 +4,7 @@
 
 .align-item {
     align-items: center;
+    line-height: 50px;
 }
 .container{
     margin: auto;
